@@ -18,10 +18,10 @@ imgurl_base=$(echo "$response" | grep -oP '(?<="urlbase":")[^"]*')
 imgurl="https://cn.bing.com${imgurl_base}_1920x1080.jpg"
 
 # 指定图片保存路径并使用完整日期作为文件名
-save_path="/www/wwwroot/www.foambk.top/img/${full_date}.jpg"
+save_path="/www/wwwroot/www.xxx.com/img/${full_date}.jpg"
 
 # 如果年月目录不存在，则创建
-mkdir -p "/www/wwwroot/www.foambk.top/img"
+mkdir -p "/www/wwwroot/www.xxx.com/img"
 
 # 如果图片链接不为空，则下载图片并保存到指定路径
 if [ -n "$imgurl_base" ]; then
